@@ -10,7 +10,7 @@ for (const element of inputs) {
 
   labelInInput.classList.add('field-label');
   labelInInput.setAttribute('for', idElement);
-  labelInInput.textContent = nameElement;
+  labelInInput.textContent = nameElement.toUpperCase();
 
   element.setAttribute('placeholder', capitalizeName);
   element.insertAdjacentElement('beforebegin', labelInInput);
